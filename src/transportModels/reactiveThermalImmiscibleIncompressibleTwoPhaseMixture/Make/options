@@ -1,0 +1,36 @@
+EXE_INC = \
+    -I$(LIB_SRC)/transportModels \
+    -I$(LIB_SRC)/transportModels/incompressible/lnInclude \
+    -I$(LIB_SRC)/transportModels/interfaceProperties/lnInclude \
+    -I$(LIB_SRC)/transportModels/twoPhaseMixture/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/specie/speciesTable \
+    -I$(LIB_SRC)/OpenFOAM/containers/PtrLists/PtrList \
+    -I$(LIB_SRC)/finiteVolume/fields/volFields \
+    -I$(LIB_SRC)/OpenFOAM/db/typeInfo \
+    -I$(LIB_SRC)/thermophysicalModels/specie/reaction/reactionRate/ArrheniusReactionRate \
+    -I$(LIB_SRC)/thermophysicalModels/chemistryModel/chemistryModel/StandardChemistryModel \
+    -I$(LIB_SRC)/thermophysicalModels/chemistryModel/chemistryModel/BasicChemistryModel \
+    -I$(LIB_SRC)/thermophysicalModels/chemistryModel/chemistryModel/basicChemistryModel \
+    -I$(LIB_SRC)/thermophysicalModels/basic/basicThermo \
+    -I$(LIB_SRC)/thermophysicalModels/specie/reaction/Reactions/Reaction \
+    -I$(LIB_SRC)/ODE/ODESystem \
+    -I$(LIB_SRC)/thermophysicalModels/reactionThermo/mixtures/reactingMixture \
+    -I$(LIB_SRC)/thermophysicalModels/reactionThermo/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/basic/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/specie/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/functions/Polynomial \
+    -I$(LIB_SRC)/thermophysicalModels/thermophysicalFunctions/lnInclude \
+    -I$(LIB_SRC)/ODE/lnInclude \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/lnInclude
+
+LIB_LIBS = \
+    -ltwoPhaseMixture \
+    -L$(FOAM_USER_LIBBIN) \
+    -linterfaceProperties \
+    -ltwoPhaseProperties \
+    -lfluidThermophysicalModels \
+    -lreactionThermophysicalModels \
+    -lspecie \
+    -lODE \
+    -lfiniteVolume

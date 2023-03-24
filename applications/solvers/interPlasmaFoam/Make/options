@@ -1,0 +1,37 @@
+EXE_INC = \
+    -I$(WM_PROJECT_DIR)/applications/solvers/multiphase/VoF \
+    -I$(LIB_SRC)/transportModels/twoPhaseMixture/lnInclude \
+    -I$(LIB_SRC)/transportModels \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels/incompressible/lnInclude \
+    -I$(LIB_SRC)/transportModels/interfaceProperties/lnInclude \
+    -I$(LIB_SRC)/TurbulenceModels/turbulenceModels/lnInclude \
+    -I$(LIB_SRC)/TurbulenceModels/incompressible/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/dynamicFvMesh/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/sampling/lnInclude \
+    -I$(LIB_SRC)/OpenFOAM/lnInclude \
+    -I$(LIB_SRC)/OpenFOAM/primitives/strings/lists \
+    -I$(LIB_SRC)/thermophysicalModels/specie/specie \
+    -I$(LIB_SRC)/thermophysicalModels/specie/speciesTable \
+    -I$(LIB_SRC)/thermophysicalModels/specie/specieElement \
+    -I$(WM_PROJECT_USER_DIR)/src/reactionMultiphase/lnInclude \
+    -I$(WM_PROJECT_USER_DIR)/src/multiphaseChemistryModel/lnInclude \
+    -I$(LIB_SRC)/ODE/lnInclude \
+    -I$(WM_PROJECT_USER_DIR)/src/transportModels/my_thermalImmiscibleIncompressibleTwoPhaseMixture/lnInclude
+
+EXE_LIBS = \
+    -L$(FOAM_USER_LIBBIN) \
+    -lmy_thermalImmiscibleIncompressibleTwoPhaseMixture \
+    -lreactionMultiphase \
+    -lmultiphaseChemistryModel \
+    -lmy_thermalIncompressibleTransportModels \
+    -lturbulenceModels \
+    -lincompressibleTurbulenceModels \
+    -lfiniteVolume \
+    -ldynamicFvMesh \
+    -lfvOptions \
+    -lmeshTools \
+    -lsampling \
+    -lspecie \
+    -lwaveModels

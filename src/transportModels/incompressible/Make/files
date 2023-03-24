@@ -1,0 +1,6 @@
+conductivityModels/conductivityModel/conductivityModel.C
+conductivityModels/conductivityModel/conductivityModelNew.C
+conductivityModels/Fourier/Fourier.C
+my_thermalIncompressibleTwoPhaseMixture/my_thermalIncompressibleTwoPhaseMixture.C
+
+LIB = $(FOAM_USER_LIBBIN)/libmy_thermalIncompressibleTransportModels

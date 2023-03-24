@@ -1,0 +1,3 @@
+multiphaseChemistryModel.C
+
+LIB = $(FOAM_USER_LIBBIN)/libmultiphaseChemistryModel
