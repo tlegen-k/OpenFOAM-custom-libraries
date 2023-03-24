@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "reactiveThermalImmiscibleIncompressibleTwoPhaseMixture.C": "cpp",
+        "my_thermalImmiscibleIncompressibleTwoPhaseMixture.C": "cpp",
+        "reactionMultiphase.C": "cpp",
+        "conductivityModel.C": "cpp",
+        "interPlasmaFoam.C": "cpp"
+    }
+}
