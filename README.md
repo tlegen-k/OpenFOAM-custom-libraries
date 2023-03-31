@@ -20,7 +20,7 @@ Gauss's law for electric potential and charge is solved. Effect of created elect
 
 `interPlasmaFoam` was employed to study the interaction of atmospheric pressure plasma jet device impinging on water interaction. Schematics are in the picture:
 
-![Plasma jet impinging on water](./pictures/Fig01 Model overview.jpg)
+![Plasma jet impinging on water](pictures/Fig01Modeloverview.png)
 
 
 ## Custom libraries
