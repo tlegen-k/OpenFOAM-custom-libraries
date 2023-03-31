@@ -18,6 +18,11 @@ To ensure smooth transition in the interface region smoothstep function is imple
 
 Gauss's law for electric potential and charge is solved. Effect of created electric fields on the interface deformation is coupled with the VoF approach.
 
+`interPlasmaFoam` was employed to study the interaction of atmospheric pressure plasma jet device impinging on water interaction. Schematics are in the picture:
+
+![Plasma jet impinging on water](./pictures/Fig01 Model overview.jpg)
+
+
 ## Custom libraries
 `TurbulenceModels` implements Chien's low-Reynolds k-$\epsilon$ turbulence model preserving the OOP approach of OpenFOAM in regards to available out-of-box turbulence models.
 
