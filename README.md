@@ -1,17 +1,17 @@
 # OpenFOAM-custom-libraries
 This repository contains the computational modeling solver and associated libraries I have developed in my PhD journey.
-All code was developed for OpenFOAM-v1812, nevertheless should be portable to more modern versions of software. The code was tested on macOS Monterey 12.1, CentOS v7, and generally should be easily portable to any Linux distribution (as long as OpenFOAM itseld was correctly installed). 
+All code was written for OpenFOAM-v1812, nevertheless should be portable to more modern versions of software. The code was tested on macOS Monterey 12.1, CentOS v7, and generally should be easily portable to any Linux distribution (as long as OpenFOAM itseld was correctly installed). 
 
 If you find this code helpful in your research please be sure to cite my paper.
 
 ## interPlasmaFoam
 Main solver `interPlasmaFoam` models turbulent gas flow, gas-liquid dynamic interface, multiphase reactive chemical species transport.
-Volume-of-Fluid (VoF) approach is employed for capturing the multiphase flow and is coupled with the Chien's low-Reynolds k-$\epsilon$ turbulence model.
+Volume-of-Fluid (VoF) approach is employed for capturing the multiphase flow and is coupled with the Chien's low-Reynolds k-$\varepsilon$ turbulence model.
 
 Multiphase species transport is modeled using 3 implemented approaches: 
-- Haroun's model employing Harmonic averaging of diffusivities
-- Marschall's model employing Arithmetic averaging of diffusivities
-- The Continuous Species Transport model developed by Deising et al. Essentially, blends both approaches
+- Model by Haroun et al. 2010 employing Harmonic averaging of diffusivities
+- Marschall et al. 2012 model using Arithmetic averaging of diffusivities
+- The Continuous Species Transport model developed by Deising et al. 2016. Essentially, blends both approaches
 
 Chemical reactions are modeled in both phases and generally accounted for in the form of source term in the species conservation equation.
 To ensure smooth transition in the interface region smoothstep function is implemented.
