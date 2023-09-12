@@ -2,7 +2,8 @@
 This repository contains the computational modeling solver and associated libraries I have developed in my PhD journey.
 All code was written for OpenFOAM-v1812, nevertheless should be portable to more modern versions of software. The code was tested on macOS Monterey 12.1, CentOS v7, and generally should be easily portable to any Linux distribution (as long as OpenFOAM itseld was correctly installed). 
 
-If you find this code helpful in your research please be sure to cite my paper.
+If you find this code helpful in your research please be sure to cite my paper: ["Modeling of reactive species interphase transport in plasma jet impinging on water"](https://iopscience.iop.org/article/10.1088/1361-6463/acf86a)
+DOI 10.1088/1361-6463/acf86a
 
 ## interPlasmaFoam
 Main solver `interPlasmaFoam` models turbulent gas flow, gas-liquid dynamic interface, multiphase reactive chemical species transport.
